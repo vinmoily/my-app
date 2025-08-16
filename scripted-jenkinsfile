@@ -1,6 +1,6 @@
 node { 
      stage('SCM-Checkout') { 
-             git branch: 'main', credentialsId: 'Git-Credential' 
+             git branch: 'main', credentialsId: 'Git-Credential',
              url: 'https://github.com/vinmoily/my-app.git'
             }
     stage('Build') {
