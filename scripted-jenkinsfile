@@ -1,6 +1,7 @@
 node { 
      stage('SCM-Checkout') { 
-             echo " I am in scm checkout step"
+             git branch: 'main', credentialsId: 'Git-Credential' 
+             url: 'https://github.com/vinmoily/my-app.git'
             }
     stage('Build') {
 	      echo " I am in build 2 step"
