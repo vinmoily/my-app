@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('SCM-Checkout') { 
             steps {
-			     echo " I am in scm checkout step"
+			    git branch: 'main', credentialsId: 'Git-Credential', 
+                 url: 'https://github.com/vinmoily/my-app.git'
             }
         }
         stage('Build') { 
