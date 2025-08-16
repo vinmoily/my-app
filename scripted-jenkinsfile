@@ -3,7 +3,7 @@ node {
              echo " I am in scm checkout step"
             }
     stage('Build') {
-	      echo " I am in build step"
+	      echo " I am in build 2 step"
         // 
     }
     stage('Test') {
